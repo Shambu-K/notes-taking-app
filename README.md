@@ -3,10 +3,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Features
-<ul>
-  </li> adding/editing/deleting notes
-  </li> supports local storage in browser
-</ul>
+  - adding/editing/deleting notes
+  - supports local storage in browser
 
 ## View the app
 https://shambu-k.github.io/notes-taking-app/
