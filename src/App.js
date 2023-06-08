@@ -8,35 +8,7 @@ export default function App(){
 
   const [searchText, setSearchText] = useState('')
   const [notes, setNotes] = useState(
-    [
-      {
-        id: nanoid(),
-        title: 'Title-1',
-        text: 'This is my first note',
-        date: new Date().toLocaleDateString(),
-      },
-      {
-        id: nanoid(),
-        title: 'Must Do',
-        text: 'Go watch Home Town Cha-cha-cha',
-        date: new Date().toLocaleDateString(),
-      },
-      {
-        id: nanoid(),
-        title: 'Title-3',
-        text: 'Was going to add title, ran into some bugs, didnt have time',
-        date: new Date().toLocaleDateString(),
-        
-      },
-      {
-        id: nanoid(),
-        title: 'Unpopular Opinions',
-        text: 'Monica >> Rachel',
-        date: new Date().toLocaleDateString(),
-      },
-
-
-    ]
+    []
   );
 
   const [editId, setEditId] = useState(null)
@@ -46,6 +18,9 @@ export default function App(){
     const savedNotes = JSON.parse(localStorage.getItem('notes-app-data'));
     if(savedNotes){
       setNotes(savedNotes)
+    }
+    else{
+      setNotes([])
     }
     console.log(savedNotes)
   }, [])
