@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/notes-taking-app/static/css/main.25803135.css",
-    "main.js": "/notes-taking-app/static/js/main.a0767d5d.js",
+    "main.js": "/notes-taking-app/static/js/main.0d3594ec.js",
     "index.html": "/notes-taking-app/index.html",
     "main.25803135.css.map": "/notes-taking-app/static/css/main.25803135.css.map",
-    "main.a0767d5d.js.map": "/notes-taking-app/static/js/main.a0767d5d.js.map"
+    "main.0d3594ec.js.map": "/notes-taking-app/static/js/main.0d3594ec.js.map"
   },
   "entrypoints": [
     "static/css/main.25803135.css",
-    "static/js/main.a0767d5d.js"
+    "static/js/main.0d3594ec.js"
   ]
 }
