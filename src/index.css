@@ -11,3 +11,154 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 10px;
+   min-height: 100%;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjHtromGowq-Ehp5WnbdN7hzdMgsDBv311rFskDCgMw04eS-zyh1A3ykHGIdYzt6X5CLc&usqp=CAU");
+  background-size: cover;
+  background-position: center;
+}
+
+.notes-list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+} 
+
+.note {
+  background-color: #fef68a;
+  border-radius: 15px;
+  padding: 1rem;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: cursive;
+}
+
+.note.new {
+  background-color: rgb(220, 172, 204);
+
+}
+
+.edit-note {
+  border: none;
+  resize: none;
+  background-color: #fef68a;
+  display: flex;
+  /* flex: 1 */
+}
+
+.edit-note:focus {
+  outline: none;
+
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: rgb(220, 172, 204);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.delete-icon {
+  border-radius: 15px;
+
+}
+
+.delete-icon:hover {
+  cursor: pointer;
+  background-color: #faf7f7;
+
+
+}
+
+.edit-icon {
+  border-radius: 15px;
+
+}
+
+.edit-icon:hover {
+  cursor: pointer;
+  background-color: #faf7f7;
+
+
+}
+
+.note-footer {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #e9e2e2;
+  border-radius: 15px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.search input {
+  flex: 1;
+  border: none;
+  background-color: #e9e2e2;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.page-holder {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-cover {
+  background-size:cover;
+  background-position: center;
+}
+
+.header {
+  margin-left: 15px;
+  font-family: 'Niconne', cursive;
+  color: #38161a;
+}
